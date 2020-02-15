@@ -1,4 +1,4 @@
-const nodeRegrex = require('../node-validator');
+const nodeRegrex = require('./node-validator');
 
 describe('test Input',()=>{
 

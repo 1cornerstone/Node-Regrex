@@ -47,10 +47,6 @@ const isPhone=(text )=>{
     return pattern.test(text)
 };
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a50ff3d6e5622dc1d13eb577bb40afb83478401
 /*
 * validate if input contain digit only
 * Returns a Boolean value that indicates whether or not match the pattern.
