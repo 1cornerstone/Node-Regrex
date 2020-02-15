@@ -38,5 +38,5 @@
          example:  08100001111  
                       
                       
-                      
-you can pull request and add more functions to the lib
+                     
+you can pull request and add more functions to the lib , also make sure you write test
