@@ -1,19 +1,23 @@
-const nodeRegrex = require('./node-validator');
+const {isNumber,isEmail,noAlphanumeric,withAlphanumeric,isPhone}= require('./node-validator');
 
 describe('test Input',()=>{
 
     it('should check noAlphanumeric', function () {
-        expect(nodeRegrex.noAlphanumeric('John smith Kingsley')).toBe(true);
+        expect(noAlphanumeric('John smith Kingsley')).toBe(true);
     });
 
     it('should check withAlphanumeric', function () {
-        expect(nodeRegrex.withAlphanumeric(' $100 > $20' )).toBe(false);
+        expect(withAlphanumeric(' $100 > $20' )).toBe(false);
     });
     it('should check isEmail', function () {
-        expect(nodeRegrex.isEmail('loremipsum@mail.com')).toBe(true);
+        expect(isEmail('loremipsum@mail.com')).toBe(true);
     });
     it('should check isPhone', function () {
-        expect(nodeRegrex.isPhone('08100001111')).toBe(true);
+        expect(isPhone('08100001111')).toBe(true);
+    });
+
+ it('should check isNumber', function () {
+        expect(isNumber('402')).toBe(true);
     });
 
 });
