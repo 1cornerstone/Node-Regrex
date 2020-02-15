@@ -9,7 +9,7 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      -checkout
-      -run:npm install
-      -run:npm test
+      - checkout
+      - run: npm install
+      - run: npm test
 
